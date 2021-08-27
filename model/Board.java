@@ -14,7 +14,7 @@ public class Board {
     }
 
     public void placeMark(Mark mark, BoardPosition boardPosition) {
-        Mark storedMark = getMark(mark, boardPosition);
+        Mark storedMark = getMark(boardPosition);
 
         if(storedMark != Mark.Empty) {
             switch(boardPosition) {
